@@ -36,7 +36,7 @@ def image_with_squares(image,shape=(256, 512, 3), square_size=100):
     top_left_2_2 = np.random.randint(0, shape[1] - square_size + 1)
 
     #Test no overlap
-    while np.abs(top_left_2_1 - top_left_1_1 and top_left_2_2 - top_left_1_2) < square_size:
+    while np.abs(top_left_2_1 - top_left_1_1 ) and np.abs(top_left_2_2 - top_left_1_2) < square_size:
         top_left_2_1 = np.random.randint(0, shape[0] - square_size + 1, 1)
         top_left_2_2 = np.random.randint(0, shape[1] - square_size + 1, 1)
 
